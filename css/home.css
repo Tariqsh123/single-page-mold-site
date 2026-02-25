@@ -3158,3 +3158,57 @@ section::after {
 h1 span,h2 span ,h3 span,.faq-span{
     color: #ffb347;
 }
+
+.call-now-fixed-btn{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1;
+}
+.call-now-fixed-btn a {
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+    font-size: large;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ff753e, #ffb731);
+    background-size: 200% 200%; /* for gradient movement */
+    border: 2px solid white;
+    animation: pulseGradient 1s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes pulseGradient {
+    0% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+    50% {
+        background-position: 100% 50%;
+        transform: scale(1.05);
+    }
+    100% {
+        background-position: 0% 50%;
+        transform: scale(1);
+    }
+}
+
+@media(max-width:600px){
+    .call-now-fixed-btn{
+    height: 100px;
+    width: 100%;
+    right: 0;
+    bottom: 50px;
+}
+}
