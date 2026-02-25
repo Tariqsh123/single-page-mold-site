@@ -992,6 +992,7 @@ textarea.form-control {
 .navbar>.container-fluid {
     align-items: center;
     display: flex;
+    height: 100px;
     justify-content: space-between
 }
 
@@ -2006,10 +2007,14 @@ header .navbar {
 }
 
 header .navbar .navbar-brand {
-    max-height: 45px;
-    max-width: 144px
+    /* max-height: 45px;
+    max-width: 144px */
 }
-
+header .navbar .navbar-brand img{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
 header .navbar .nav-item button.btn-white-shade {
     border-color: #fff !important;
     color: #fff !important
@@ -2413,8 +2418,9 @@ section.faq-form form button {
 }
 
 footer {
-    background: linear-gradient(45deg, #333 10%, #383743);
-    padding: 20px 0
+    /* background: linear-gradient(45deg, #333 10%, #383743); */
+    padding: 20px 0;
+    border-top: 1px solid #ff753e;
 }
 
 footer .footer-affordable {
@@ -2423,7 +2429,7 @@ footer .footer-affordable {
 }
 
 footer .footer-affordable .social-links i {
-    color: #fff;
+    color: #ff753e;
     font-size: 40px;
     margin: 0 5px
 }
@@ -2431,8 +2437,10 @@ footer .footer-affordable .social-links i {
 footer .footer-affordable .text-white {
     font-weight: 300;
     max-height: 120px;
+    color: #000 !important;
     max-width: 530px;
-    min-height: 70px
+    /* min-height: 70px */
+    font-size: small;
 }
 
 footer .footer-affordable .list-footer {
@@ -2443,7 +2451,7 @@ footer .footer-affordable .list-footer {
 }
 
 footer .footer-affordable .list-footer li a {
-    color: #fff;
+    color: #000;
     display: inline-block;
     font-family: Zilla Slab;
     font-size: 18px;
@@ -2456,12 +2464,12 @@ footer .footer-affordable .list-footer li a {
 }
 
 footer .footer-affordable img {
-    height: 55px;
-    width: 180px
+    height: 200px;
+    width: auto
 }
 
 footer hr {
-    border-color: #fff;
+    border-color: #ff753e;
     opacity: 1
 }
 
@@ -2474,7 +2482,7 @@ footer .footer-copyrights .list-copyrights {
 }
 
 footer .footer-copyrights .list-copyrights li {
-    color: #fff;
+    color: #000;
     font-size: 12px;
     font-weight: 400;
     line-height: 32px
@@ -2562,7 +2570,7 @@ section.cta-banner hr {
 
 @media (max-width:992px) {
     header {
-        height: 72px
+        /* height: 72px */
     }
     .h1,
     .h2,
@@ -2619,7 +2627,9 @@ section.cta-banner hr {
     }
     .home-banner .banner-image .tag,
     .home-banner .banner-image ul li {
-        text-align: center !important
+        text-align: left !important;
+        width: 200px;
+        margin: 0 auto;
     }
     br {
         display: none
@@ -2773,7 +2783,7 @@ section.cta-banner hr {
 @media (min-width:1200px) and (max-width:1399px) {
     .home-banner .banner-image,
     .home-banner .banner-image img.slider-img {
-        height: 600px
+        /* height: 600px */
     }
     .home-banner .banner-image .h1 {
         font-size: 45px
@@ -2789,7 +2799,7 @@ section.cta-banner hr {
 @media (min-width:1200px) and (max-width:1399px) {
     .home-banner .banner-image,
     .home-banner .banner-image img.slider-img {
-        height: 680px
+        height: 850px
     }
 }
 
@@ -3174,12 +3184,12 @@ h1 span,h2 span ,h3 span,.faq-span{
     height: fit-content;
     width: 95%;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    padding: 5px 20px;
+    padding: 10px 20px;
     font-size: large;
     font-weight: 600;
     background: linear-gradient(45deg, #ff753e, #ffb731);
@@ -3207,8 +3217,6 @@ h1 span,h2 span ,h3 span,.faq-span{
 @media(max-width:600px){
     .call-now-fixed-btn{
     height: 100px;
-    width: 100%;
-    right: 0;
-    bottom: 50px;
+    width: 90%;
 }
 }
