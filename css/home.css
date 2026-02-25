@@ -2085,8 +2085,9 @@ header .navbar.fixed-top {
 
 .home-banner .banner-image .h1,
 .home-banner .banner-image h1 {
-    font-size: 45px
+    font-size: 35px
 }
+
 
 .home-banner .banner-image .hr-line {
     background: #fff;
@@ -3152,4 +3153,8 @@ section::after {
     transform: scale(1.05);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     border-image-source: linear-gradient(135deg, #ffb347, #ff753e);
+}
+
+h1 span,h2 span ,h3 span,.faq-span{
+    color: #ffb347;
 }
