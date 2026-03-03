@@ -3375,3 +3375,8 @@ h1 span,h2 span ,h3 span,.faq-span{
     gap: 8px;
     font-size: small;
 }
+.neighborhood-card img{
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+}
