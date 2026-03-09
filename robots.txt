@@ -1,0 +1,22 @@
+User-agent: *
+Disllow: /
+
+User-agent: GPTBot
+Disllow: /
+
+User-agent: OAI-SearchBot
+Disllow: /
+
+User-agent: Googlebot
+Disllow: /
+
+User-agent: Google-Extended
+Disllow: /
+
+User-agent: PerplexityBot
+Disllow: /
+
+User-agent: xAI-Bot
+Disllow: /
+
+Sitemap: 
