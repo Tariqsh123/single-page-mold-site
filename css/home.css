@@ -12,15 +12,16 @@
 }
 
 .animate__animated.animate__infinite {
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite
+    /* -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite */
 }
 
 .animate__animated.animate__fast {
-    -webkit-animation-duration: .8s;
+    /* -webkit-animation-duration: .8s;
     animation-duration: .8s;
     -webkit-animation-duration: calc(var(--animate-duration)*.8);
-    animation-duration: calc(var(--animate-duration)*.8)
+    animation-duration: calc(var(--animate-duration)*.8) */
+    animation: pulseGradient 1s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion:reduce),
@@ -1072,15 +1073,24 @@ textarea.form-control {
 }
 
 .navbar-toggler-icon {
-    background-image: var(--bs-navbar-toggler-icon-bg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: inline-block;
-    height: 1.5em;
-    vertical-align: middle;
-    width: 1.5em;
-    display: none;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 600;
+    background: linear-gradient(45deg, #ff753e, #ffb731);
+    background-size: 200% 200%; /* for gradient movement */
+    border: 2px solid white;
+    animation: pulseGradient 1s ease-in-out infinite;
+}
+.navbar-toggler-icon:hover{
+    color: white;
 }
 
 @media (min-width:992px) {
