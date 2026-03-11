@@ -1074,7 +1074,7 @@ textarea.form-control {
 
 .navbar-toggler-icon {
     height: fit-content;
-    width: fit-content;
+    width: 100%;
     display: flex;
     border-radius: 30px;
     justify-content: center;
